@@ -11,7 +11,7 @@ include "db2.php";
 
 
 
-$result1 =mysqli_query($con, "UPDATE `registration_db` SET `name`='$name',`mobile`='$mobile' `address`='$Address' WHERE `role_id`='$roleId'");
+$result1 =mysqli_query($con, "UPDATE `registration_db` SET `user_name`='$name',`mobile`='$mobile', `address`='$Address' WHERE `role_id`='$roleId'");
 $result2 =mysqli_query($con, "UPDATE `role_db` SET `mail`='$email',`password`='$pass' WHERE `role_id`='$roleId'");
 
 if($result2){
